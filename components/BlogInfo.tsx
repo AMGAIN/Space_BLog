@@ -31,8 +31,8 @@ const BlogInfo = ({ id, title, author,date_time, desc, img}: Props) => {
                 ))}
             </div>
             <div className='m-5 flex justify-center gap-5'>
-                {[x, facebook, linkedin].map((cat) => (
-                    <Image src={cat} alt="img" className='w-15 hover:cursor-pointer'/>
+                {[x, facebook, linkedin].map((cat,index) => (
+                    <Image key={index} src={cat}  alt="img" className='w-15 hover:cursor-pointer'/>
                 ))}
             </div>
             <hr />

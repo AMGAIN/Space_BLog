@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className='w-[480px] flex justify-between mr-12'>
           {['About us', 'Languages', 'Contact', 'Login'].map((items) => (
-            <button className='hover:cursor-pointer after:block after:h-[1px] after:bg-gray-300 after:rounded-2xl after:scale-x-0 after:transition-transform after:duration-1000 after:origin-left hover:after:scale-x-100 hover:text-white'>{items}</button>
+            <button className='hover:cursor-pointer after:block after:h-[1px] after:bg-gray-300 after:rounded-2xl after:scale-x-0 after:transition-transform after:duration-1000 after:origin-left hover:after:scale-x-100 hover:text-white' key={items}>{items}</button>
           ))}
         </div>
       </div>

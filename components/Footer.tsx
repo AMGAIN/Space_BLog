@@ -1,13 +1,16 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
     return (
         <footer >
-            <div className='border p-5 flex justify-between items-center gap-10 bg-gray-800 text-gray-200 pt-10'>
+            <div className='border px-20 p-5 flex justify-between items-center gap-10 bg-gray-800 text-gray-200 pt-10'>
             <div>
-                this it to check
-            </div>
-            <div className='border p-2 w-[700px] text-left'>
+                123-234-121 <br />
+                <Link href={'/policy'}>privacy_policy</Link><br />
+                 Accessibility Statement
+            </div> 
+            <div className=' p-2 w-[700px] text-left'>
             <h1 className='text-5xl'>JOIN  THE CONVERSATION </h1>
             <p className='text-2xl'>Get the content you need, just when you need it</p>
             <form action="">
