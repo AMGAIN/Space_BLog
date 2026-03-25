@@ -10,6 +10,7 @@ const PostContainer = () => {
         <PostCard
           key={post.id}
           id={post.id}
+          author={post.author}
           title={post.title}
           date={post.date_time}
           desc={post.desc}

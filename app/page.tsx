@@ -5,8 +5,10 @@ import PostContainer from "@/components/PostContainer";
 export default function Home() {
   return (
     <>
-      <Hero/>
-      <PostContainer/>
+      <Hero />
+      <div className=" mt-10">
+        <PostContainer />
+      </div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 
 import mars from '../public/mars.png';
 import trend from '../public/trend.png';
@@ -21,9 +22,9 @@ const Hero = () => {
             <div >
               <input type="text" placeholder="Search similar NEWS" className=" p-4 outline-none rounded-2xl bg-gray-700 text-white outline-none" />
             </div>
-            <div>
-              <button className="p-4 bg-gray-700 rounded-2xl hover:bg-gray-700 hover:cursor-pointer ">EXPLORE →</button>
-            </div>
+            {/* <div> */}
+              <Link href={'/blog'} className="p-4 bg-gray-700 rounded-2xl hover:bg-gray-700 hover:cursor-pointer hover:transform-translation ">EXPLORE →</Link>
+            {/* </div> */}
           </div>
         </div>
         <div className=' rounded-xl shadow-white transition-shadow duration-300 hover:cursor-pointer hover:shadow-[0_0_20px_white]'>

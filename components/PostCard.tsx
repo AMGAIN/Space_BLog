@@ -7,12 +7,13 @@ type PostCardProps = {
   title: string
   date: string
   desc: string
+  author: string
   img: StaticImageData
 }
 
 const PostCard = ({ id, title, date, desc, img }: PostCardProps) => {
   return (
-    <div className='p-10 text-white w-[1200px]'>
+    <div className='px-10 text-white w-[1200px]'>
       
       <p className='text-gray-500 mb-5'>{date}</p>
 
@@ -22,20 +23,21 @@ const PostCard = ({ id, title, date, desc, img }: PostCardProps) => {
 
       <Image
         src={img}
-        className='w-[1000px]'
+        className=' border w-[1100px]'
         alt="post image"
         priority
       />
 
-      <p className='my-10'>
+      <p className='my-10 text-justify w-[1100px]'>
         {desc}
       </p>
 
       <Link href={`/blog/${id}`} className='hover:cursor-pointer hover:text-gray-300 duration-500 transform hover:scale-110 text-2xl'>
         Read full post 
       </Link>
-      <hr className='text-gray-500' />
-
+      <br />
+      <br />
+      <hr className='text-gray-500 w-[1100px]' />
     </div>
   )
 }
