@@ -32,7 +32,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {/* main content */}
-        <main className="h-[800px] bg-gray-800 z-0">
+        <main className=" bg-gray-800 z-0">
           {/* <hr className="display-none" /> */}
           {children}
         </main>
