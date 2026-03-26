@@ -8,8 +8,8 @@ import trend from '../public/trend.png';
 const Hero = () => {
   return (
     <div>
-      <div className="flex mx-12 pt-12 justify-between items-center p-1rem bg-gray-800 text-white text-2xl">
-        <div className=" p-12 relative border-l z-2 w-[800px]">
+      <div className=" flex mx-12 pt-12 justify-between items-center p-1rem bg-gray-800 text-white text-2xl">
+        <div className=" p-12 lg:w-[50%] xl:w-[50%] 2xl:w-[50%]  relative border-l z-2 w-[800px]">
           <div className='flex items-center gap-3'>
             <Image className="opacity-100 w-5" src={trend} alt="flame" priority />
             <p className=' text-gray-500 text-4xl'>Hot NEWS:</p>
@@ -27,7 +27,7 @@ const Hero = () => {
             {/* </div> */}
           </div>
         </div>
-        <div className=' rounded-xl shadow-white transition-shadow duration-300 hover:cursor-pointer hover:shadow-[0_0_20px_white]'>
+        <div className='rounded-xl border xl:w-[50%] shadow-white transition-shadow duration-300 hover:cursor-pointer hover:shadow-[0_0_20px_white]'>
           <Image className="rounded-xl " src={mars} alt="mars" priority />
         </div>
       </div>

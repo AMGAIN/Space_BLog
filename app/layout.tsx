@@ -33,7 +33,6 @@ export default function RootLayout({
         <Navbar />
         {/* main content */}
         <main className=" bg-gray-800 z-0">
-          {/* <hr className="display-none" /> */}
           {children}
         </main>
         <Footer />

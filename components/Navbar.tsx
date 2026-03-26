@@ -4,14 +4,36 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <>
-      <div className='p-4 pl-12 flex bg-gray-800 justify-between text-gray-200 text-xl shadow-2xl items-center sticky top-0 z-50'>
-        <div className='flex justify-between w-96 '>
-          <Link href={'/'} className='text-3xl text-underline hover:cursor-pointer'>X-plora</Link>
-          <Link href={'/blog'} className='text-3xl text-underline hover:cursor-pointer'>Blogs</Link>
+      <div className='p-2 pl-12 flex bg-gray-800 justify-between text-gray-200 shadow-2xl items-center sticky top-0 z-50 sm:text-1xl'>
+        <div className='flex justify-between items-center w-64 px-4 py-2 rounded-xl bg-gray-800/40 backdrop-blur-md  shadow-lg text-2xl font-semibold'>
+
+          <Link href={'/'} className='transition-colors duration-300 hover:text-white text-gray-300'>
+            X-Plora
+          </Link>
+
+          <Link href={'/blog'} className='relative text-gray-300 transition-colors duration-300 hover:text-white after:block after:h-[2px] after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100'>
+            Blogs
+          </Link>
+
         </div>
-        <div className='w-[480px] flex justify-between mr-12'>
+        <div className='w-[480px] flex justify-between mr-12 px-4 py-2 rounded-xl bg-gray-800/40 backdrop-blur-md border border-gray-700 shadow-lg'>
           {['About us', 'Languages', 'Contact', 'Login'].map((items) => (
-            <button className='hover:cursor-pointer after:block after:h-[1px] after:bg-gray-300 after:rounded-2xl after:scale-x-0 after:transition-transform after:duration-1000 after:origin-left hover:after:scale-x-100 hover:text-white' key={items}>{items}</button>
+            <button
+              key={items}
+              className='
+      relative px-3 py-1 text-gray-300 font-medium
+      transition-colors duration-300
+      hover:text-white
+
+      after:block after:h-[2px] after:bg-white
+      after:rounded-full after:scale-x-0
+      after:transition-transform after:duration-300
+      after:origin-left
+      hover:after:scale-x-100
+      '
+            >
+              {items}
+            </button>
           ))}
         </div>
       </div>
