@@ -20,7 +20,7 @@ const Page = async ({ params }: Props) => {
   }
 
   return (
-    <div className='text-white pt-10 flex gap-4 justify-center '>
+    <div className='text-white p-10 flex gap-4 justify-center '>
       <BlogInfo
         id={post.id}
         title={post.title}

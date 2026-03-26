@@ -5,7 +5,7 @@ import { posts } from '../app/data';
 const PostContainer = () => {
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className= 'flex flex-col items-center'>
       {posts.map((post) => (
         <PostCard
           key={post.id}

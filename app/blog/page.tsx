@@ -6,8 +6,13 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='pt-15'>
+    <div className='text-gray-300'>
+      <div className='p-2 pl-[260px] bg-gray-950 text-5xl'>
+        <p >BLOGs</p>
+      </div>
+      
       <PostContainer/>
+      
     </div>
   )
 }

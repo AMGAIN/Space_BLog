@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <>
-      <div className='p-2 pl-12 flex bg-gray-800 justify-between text-gray-200 shadow-2xl items-center sticky top-0 z-50 sm:text-1xl'>
+      <div className='p-2 pl-12 flex bg-gray-800 justify-between text-gray-200 shadow-2xl shadow-[0_4px_8px_rgba(0,0,0,0.6)] items-center sticky top-0 z-50 sm:text-1xl'>
         <div className='flex justify-between items-center w-64 px-4 py-2 rounded-xl bg-gray-800/40 backdrop-blur-md  shadow-lg text-2xl font-semibold'>
 
           <Link href={'/'} className='transition-colors duration-300 hover:text-white text-gray-300'>
@@ -30,6 +30,7 @@ const Navbar = () => {
       after:transition-transform after:duration-300
       after:origin-left
       hover:after:scale-x-100
+      hover:cursor-pointer
       '
             >
               {items}

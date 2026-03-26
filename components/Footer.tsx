@@ -4,10 +4,10 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer >
-            <div className='border px-20 p-5 flex justify-between items-center gap-10 bg-gray-800 text-gray-200 pt-10'>
+            <div className='shadow-2xl shadow-[0_-4px_8px_rgba(0,0,0,0.6)] px-20 p-5 flex justify-between items-center gap-10 bg-gray-800 text-gray-200'>
             <div>
                 123-234-121 <br />
-                <Link href={'/policy'}>privacy_policy</Link><br />
+                <Link href={'/policy'}>Blog_Policy</Link><br />
                  Accessibility Statement
             </div> 
             <div className=' p-2 w-[700px] text-left'>
