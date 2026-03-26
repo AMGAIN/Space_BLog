@@ -7,7 +7,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className='text-gray-300'>
-      <div className='p-2 pl-[260px] bg-gray-950 text-5xl'>
+      <div className='md: text-center  bg-gray-950 text-5xl'>
         <p >BLOGs</p>
       </div>
       
