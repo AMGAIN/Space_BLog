@@ -9,13 +9,13 @@ import search from '../public/search.png';
 const Hero = () => {
   return (
     <div className='bg-gray-800 text-white text-2xl'>
-      <div className=" flex mx-12 pt-12 justify-between items-center p-1rem ">
+      <div className=" mb-2 flex mx-12 pt-12 justify-between items-center p-1rem ">
         <div className="p-6 lg:w-[50%] xl:w-[50%] 2xl:w-[50%]  relative border-l z-2 w-[800px]">
           <div className='flex items-center gap-3'>
             <Image className="opacity-100 w-5" src={trend} alt="flame" priority />
             <p className=' text-gray-500 text-4xl'>Hot NEWS</p>
           </div>
-          <Link href={'/blog/3'} className="text-6xl pt-5 border-b ">MULTYPLANETARY</Link>
+          <Link href={'/blog/3'} className="text-6xl pt-5 ">MULTYPLANETARY</Link>
           <h1 className="text-5xl"> LIFE </h1>
           <p className="mt-4 text-lg">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
         </div>
