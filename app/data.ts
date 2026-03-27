@@ -7,7 +7,7 @@ export const posts = [
       title: "JWST NEW IMAGES",
       author: "Mark A. Garcia",
       date_time: "March 22, 2026 2:03 PM",
-      desc:"The differences in what Webb’s infrared instruments reveal and conceal within the PMR 1 “Exposed Cranium” nebula is apparent in this side-by-side view. More stars and background galaxies shine through NIRCam’s view, while cosmic dust glows more prominently in MIRI’s mid-infrared.",
+      desc:"The James Webb Space Telescope has once again amazed the world with a breathtaking new set of images, offering an unprecedented look into the depths of our universe. These latest captures showcase distant galaxies, vibrant nebulae, and star-forming regions with incredible clarity—far beyond what was previously possible. These images are not just visually stunning—they are scientifically groundbreaking. Each snapshot helps astronomers better understand the origins of stars, the evolution of galaxies, and the complex interactions shaping our cosmos.As JWST continues its mission, the world can expect even more discoveries that will reshape our understanding of space and time. One thing is certain: we are only just beginning to explore what this powerful telescope can reveal.",
       img: jwst,
     },
     {

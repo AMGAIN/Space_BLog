@@ -14,11 +14,11 @@ type PostCardProps = {
 
 const PostCard = ({ id, title, date, desc, img }: PostCardProps) => {
   return (
-    <div className='px-10 text-white w-[400px] md:w-[600px] lg:w-[900px]'>
+    <div className='md:px-30 lg:px-45 xl:px-52 2xl:px-63 text-white w-[360px] sm:w-[600px] md:w-[700px] lg:w-[950px] xl:w-[1200px] 2xl:w-[1500px]'>
       <p className='text-gray-500 mt-4 mb-4'>{date}</p>
       <h1 className='text-4xl mb-8'>{title}</h1>
-      <Image src={img} className=' border-white w-[320px] md:w-[500px] lg:w-[800px]' alt="post image" priority />
-      <p className='my-10 text-justify w-[320px] md:w-[500px] lg:w-[800px] text-gray-300'>
+      <Image src={img} className=' border-white w-full' alt="post image" priority />
+      <p className='my-10 text-justify w-full line-clamp-2 text-gray-300'>
         {desc}
       </p>
       <div >
