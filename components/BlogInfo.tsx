@@ -16,7 +16,7 @@ type Props = {
 
 const BlogInfo = ({ id, title, author,date_time, desc, img}: Props) => {
     return (
-        <div className='p-4  w-[300px] '>
+        <div className=' text-white p-4  w-[300px] '>
             <div className='my-5 gap-2 flex item-center'>
                 <div className='border  border-red-300 rounded-[50%] bg-red-100 w-20 h-20'></div>
                 <div className='flex items-center text-3xl'>{author}</div>

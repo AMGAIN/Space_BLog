@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <div className=' md p-2 pl-12 flex bg-gray-800 justify-between text-gray-200 shadow-2xl shadow-[0_4px_8px_rgba(0,0,0,0.6)] items-center sticky top-0 z-50 sm:text-1xl'>
+        <div className='p-2 pl-12 flex bg-gray-800 justify-between text-gray-200 shadow-2xl shadow-[0_4px_8px_rgba(0,0,0,0.6)] items-center sticky top-0 z-50 sm:text-1xl'>
           <div className='flex justify-between items-center w-64 px-4 py-2 rounded-xl bg-gray-800/40 text-2xl font-semibold'>
             <Link href={'/'} className='transition-colors duration-300 hover:text-white text-gray-300'>
               X-Plora
@@ -20,7 +20,7 @@ const Navbar = () => {
               Blogs
             </Link>
           </div>
-          <div className='absolute right-0 gap-5 w-[500px] hidden md:flex flex bg-gray-800/50 backdrop-blur-md shadow-2xl'>
+          <div className='absolute right-0 gap-5 w-[450px] hidden md:flex flex bg-gray-800/50 backdrop-blur-md shadow-2xl'>
             {['About us', 'Languages', 'Contact', 'Login'].map((items) => (
               <Link href={'/'}
                 key={items}
@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
 
           <button className=' relative' onClick={() => { setOpen(!open) }}>
-            <Image className='md:hidden w-10  invert hover:cursor-pointer' src={menu} alt="menu" />
+            <Image className='md:hidden  w-10  invert hover:cursor-pointer' src={menu} alt="menu" />
           </button>
 
           {open &&

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Policy = () => {
   return (
-    <div className='text-white h-[50vh] px-20'>
+    <div className='text-white px-20'>
         <p className='text-2xl '>All Blog Policies:</p><br />
         <ol className='list-decimal ml-6'>
             <li>Privacy Policy: Explains how you collect, handle, and use visitor data, including cookies.</li>

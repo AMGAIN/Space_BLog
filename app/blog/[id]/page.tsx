@@ -20,7 +20,9 @@ const Page = async ({ params }: Props) => {
   }
 
   return (
-    <div className='text-white p-10 flex gap-4 justify-center '>
+    <div className='flex '>
+      <div className='md:block hidden'>
+
       <BlogInfo
         id={post.id}
         title={post.title}
@@ -29,14 +31,29 @@ const Page = async ({ params }: Props) => {
         desc={post.desc}
         img={post.img}
       />
-      <BlogBody
-        id={post.id}
-        author={post.author}
-        title={post.title}
-        date_time={post.date_time}
-        desc={post.desc}
-        img={post.img}
-       />
+      </div>
+
+      <div className='w-full flex flex-col'>
+
+        <BlogBody
+          id={post.id}
+          author={post.author}
+          title={post.title}
+          date_time={post.date_time}
+          desc={post.desc}
+          img={post.img}
+        />
+        <div className='md:hidden border border-white'>
+          <BlogInfo
+            id={post.id}
+            title={post.title}
+            author={post.author}
+            date_time={post.date_time}
+            desc={post.desc}
+            img={post.img}
+          />
+        </div>
+      </div>
     </div>
   )
 }

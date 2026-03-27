@@ -13,10 +13,10 @@ type Props = {
 
 const BlogBody = ({ id, title,author, date_time, desc, img}: Props) => {
   return (
-    <div className='border py-5 w-[700px]  '>
-        <h1 className='text-5xl mb-10'>{title}</h1>
-        <Image className='w-[1100px]' src={img} alt="cargo ship "></Image>
-        <p className='my-10 text-justify'>{desc}</p>
+    <div className='w-full p-2 text-white flex flex-col items-center py-5'>
+        <h1 className='text-4xl md:text-5xl mb-10'>{title}</h1>
+        <Image className='w-full ' src={img} alt="alt_img"></Image>
+        <p className='md:my-10 w-full text-justify'>{desc}</p>
     </div>
   )
 }
