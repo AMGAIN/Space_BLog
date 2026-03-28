@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className=" mt-10">
+      <div className="">
         <PostContainer />
       </div>
     </>

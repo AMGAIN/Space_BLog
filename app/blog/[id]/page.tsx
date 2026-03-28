@@ -10,49 +10,37 @@ type Props = {
 }
 
 const Page = async ({ params }: Props) => {
-
   const { id } = await params
-
   const post = posts.find(p => p.id === Number(id));
 
   if (!post) {
-    return <div className='p-10 text-2xl bg-red-500 text-white'>Post not found</div>
+    return (
+      <div className='p-10 text-2xl bg-red-500 text-white text-center'>
+        Post not found
+      </div>
+    )
   }
 
   return (
-    <div className='flex '>
-      <div className='md:block hidden'>
+    <div className='bg-gray-900 min-h-screen text-white px-4 md:px-10 py-10'>
 
-      <BlogInfo
-        id={post.id}
-        title={post.title}
-        author={post.author}
-        date_time={post.date_time}
-        desc={post.desc}
-        img={post.img}
-      />
-      </div>
+      <div className='max-w-7xl mx-auto flex flex-col lg:flex-row gap-10'>
 
-      <div className='w-full flex flex-col'>
-
-        <BlogBody
-          id={post.id}
-          author={post.author}
-          title={post.title}
-          date_time={post.date_time}
-          desc={post.desc}
-          img={post.img}
-        />
-        <div className='md:hidden border border-white'>
-          <BlogInfo
-            id={post.id}
-            title={post.title}
-            author={post.author}
-            date_time={post.date_time}
-            desc={post.desc}
-            img={post.img}
-          />
+        {/* LEFT SIDEBAR */}
+        <div className='hidden lg:block lg:w-[280px] sticky top-10 h-fit'>
+          <BlogInfo {...post} />
         </div>
+
+        {/* MAIN CONTENT */}
+        <div className='flex-1'>
+          <BlogBody {...post} />
+
+          {/* MOBILE INFO */}
+          <div className='lg:hidden mt-10'>
+            <BlogInfo {...post} />
+          </div>
+        </div>
+
       </div>
     </div>
   )

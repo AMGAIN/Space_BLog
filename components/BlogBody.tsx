@@ -11,12 +11,37 @@ type Props = {
   img: StaticImageData
 }
 
-const BlogBody = ({ id, title,author, date_time, desc, img}: Props) => {
+const BlogBody = ({ title, desc, img }: Props) => {
   return (
-    <div className='w-full p-2 text-white flex flex-col items-center py-5'>
-        <h1 className='text-4xl md:text-5xl mb-10'>{title}</h1>
-        <Image className='w-full ' src={img} alt="alt_img"></Image>
-        <p className='md:my-10 w-full text-justify'>{desc}</p>
+    <div className='w-full flex flex-col items-center'>
+
+      <div className='max-w-3xl w-full'>
+
+        {/* TITLE */}
+        <h1 className='text-3xl md:text-5xl font-semibold leading-tight mb-8'>
+          {title}
+        </h1>
+
+        {/* IMAGE */}
+        <div className='relative group mb-10'>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl z-10"></div>
+          
+          <Image 
+            className='w-full rounded-2xl border border-gray-700 shadow-lg group-hover:scale-[1.02] transition duration-500'
+            src={img} 
+            alt="blog"
+            priority
+          />
+        </div>
+
+        {/* CONTENT */}
+        <div className='text-gray-300 text-base md:text-lg leading-relaxed space-y-6 text-justify'>
+          {desc.split('\n').map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
+
+      </div>
     </div>
   )
 }

@@ -14,13 +14,11 @@ type PostCardProps = {
 
 const PostCard = ({ id, title, date, desc, img }: PostCardProps) => {
   return (
-    <div className='md:px-30 lg:px-45 xl:px-52 2xl:px-63 text-white w-[360px] sm:w-[600px] md:w-[700px] lg:w-[950px] xl:w-[1200px] 2xl:w-[1500px]'>
+    <div className='bg-gray-900 px-3 sm:px-20 md:px-25 lg:px-45 xl:px-75 2xl:px-100 text-white w-full'>
       <p className='text-gray-500 mt-4 mb-4'>{date}</p>
       <h1 className='text-4xl mb-8'>{title}</h1>
       <Image src={img} className=' border-white w-full' alt="post image" priority />
-      <p className='my-10 text-justify w-full line-clamp-2 text-gray-300'>
-        {desc}
-      </p>
+      <p className='my-10 text-justify w-full line-clamp-2 text-gray-300'>{desc}</p>
       <div >
         <Link href={`/blog/${id}`} className='w-50 flex hover:cursor-pointer hover:text-gray-300 duration-500 transform hover:scale-101 text-2xl'>
           Read full post
@@ -28,7 +26,7 @@ const PostCard = ({ id, title, date, desc, img }: PostCardProps) => {
         </Link>
         
       </div>
-      <hr className='text-gray-500 mt-2 lg:w-[800px]' />
+      <hr className='text-gray-600 mt-2' />
     </div>
   )
 }
