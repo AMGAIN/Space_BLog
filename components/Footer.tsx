@@ -37,12 +37,12 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder='First name'
-                className='flex-1 px-4 py-2 rounded-md bg-gray-800 border border-gray-700 outline-none focus:ring-2 ring-gray-500'
+                className='flex-1 px-4 py-2 md:w-1/2 rounded-md bg-gray-800 border border-gray-700 outline-none focus:ring-2 ring-gray-500'
               />
               <input
                 type="text"
                 placeholder='Last name'
-                className='flex-1 px-4 py-2 rounded-md bg-gray-800 border border-gray-700 outline-none focus:ring-2 ring-gray-500'
+                className='flex-1 px-4 py-2 md:w-1/2 rounded-md bg-gray-800 border border-gray-700 outline-none focus:ring-2 ring-gray-500'
               />
             </div>
 
