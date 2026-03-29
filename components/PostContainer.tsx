@@ -13,7 +13,7 @@ const PostContainer = () => {
   return (
     <div className='p-3 flex flex-col items-center lg:flex lg:flex-row lg:justify-evenly '>
     {posts.map((post)=>(
-      <motion.div key={post.id} className=' w-full sm:w-3/5  lg:w-1/4 rounded-xl flex flex-col  items-center text-white' initial={{ opacity:.8}} whileHover={{ opacity: 1, scale: 1.02}} transition={{ duration: .4 }}>
+      <motion.div key={post.id} className='p-3 w-full sm:w-3/5 lg:w-1/4 flex flex-col  items-center text-white' initial={{ opacity:.8}} whileHover={{ opacity: 1, scale: 1.02,boxShadow: "0 0 20px white" }}  transition={{ duration: .4 }}>
         <h1 className='text-xl'>{post.title}</h1>
         <Image className='h-50' src={post.img} alt='post_image' />
         <p className='line-clamp-2'>{post.desc}</p>
