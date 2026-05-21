@@ -6,6 +6,10 @@ import { useState } from 'react';
 import menu from '../public/menu.png'
 import Image from 'next/image';
 
+const task = [{title:'About us', path:'/about'},
+  {title:'Languages', path:'languages'},
+  {title: 'Conact', path:'/contact'},
+  {title:'Login', path:'/login'}];
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -21,9 +25,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className='absolute right-0 gap-5 w-[450px] hidden md:flex flex bg-gray-800/50 backdrop-blur-md shadow-2xl'>
-            {['About us', 'Languages', 'Contact', 'Login'].map((items) => (
-              <Link href={'/'}
-                key={items}
+            {task.map((items, index) => (
+              <Link href={items.path}
+                key={index}
                 className='
               relative px-3 py-1 text-gray-300 font-medium
               transition-colors duration-300
@@ -36,7 +40,7 @@ const Navbar = () => {
               hover:after:scale-x-100
               hover:cursor-pointer'
               >
-                {items}
+                {items.title}
               </Link>
             ))}
           </div>
@@ -47,9 +51,9 @@ const Navbar = () => {
 
           {open &&
             <div className='md:hidden w-52 absolute right-[-50px] top-16 rounded-2xl flex flex-col mr-12 px-4 py-2 bg-gray-900/90 backdrop-blur-md shadow-lg'>
-              {['About us', 'Languages', 'Contact', 'Login'].map((items) => (
-                <Link href={'/'}
-                  key={items}
+              {task.map((items, index) => (
+                <Link href={items.path}
+                  key={index}
                   className='
               relative px-3 py-1 text-2xl text-gray-300 font-medium
               transition-colors duration-300
@@ -62,7 +66,7 @@ const Navbar = () => {
               hover:after:scale-x-100
               hover:cursor-pointer'
                 >
-                  {items}
+                  {items.title}
                 </Link>
               ))}
             </div>
