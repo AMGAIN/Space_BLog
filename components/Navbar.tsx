@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const task = [{title:'About us', path:'/about'},
   {title:'Languages', path:'languages'},
-  {title: 'Conact', path:'/contact'},
+  {title: 'Contact', path:'/contact'},
   {title:'Login', path:'/login'}];
 const Navbar = () => {
   const [open, setOpen] = useState(false);

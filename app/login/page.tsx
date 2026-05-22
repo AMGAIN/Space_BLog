@@ -2,8 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='h-[100vh] p-10 text-white'>
-      <h1>What do we DO:</h1>
+    <div className='h-[100vh] text-white'>
+        login
     </div>
   )
 }
