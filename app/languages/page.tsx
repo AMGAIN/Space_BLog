@@ -1,4 +1,5 @@
 import React from "react";
+import { Bolt, Cloud, Globe } from "lucide-react";
 
 const page = () => {
   return (
@@ -128,7 +129,9 @@ const page = () => {
         <div className="grid md:grid-cols-3 gap-8">
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">🌍</div>
+            <div className="text-5xl mb-5">
+              <Globe />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Global Reach
@@ -140,7 +143,9 @@ const page = () => {
           </div>
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">⚡</div>
+            <div className="text-5xl mb-5">
+              <Bolt />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Easy Navigation
@@ -152,7 +157,9 @@ const page = () => {
           </div>
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">💬</div>
+            <div className="text-5xl mb-5">
+              <Cloud />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Better Communication

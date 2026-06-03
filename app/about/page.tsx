@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Rocket, Book, Globe } from "lucide-react";
 const page = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white">
@@ -104,7 +104,9 @@ const page = () => {
         <div className="grid md:grid-cols-3 gap-8">
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">🚀</div>
+            <div className="text-5xl mb-5">
+              <Rocket />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Modern Content
@@ -117,7 +119,9 @@ const page = () => {
           </div>
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">📚</div>
+            <div className="text-5xl mb-5">
+              <Book />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Easy Learning
@@ -129,7 +133,9 @@ const page = () => {
           </div>
 
           <div className="bg-gray-900/70 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition shadow-xl">
-            <div className="text-5xl mb-5">🌎</div>
+            <div className="text-5xl mb-5">
+              <Globe />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-3">
               Global Community
