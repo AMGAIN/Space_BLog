@@ -1,5 +1,5 @@
 import React from "react";
-import { Bolt, Cloud, Globe } from "lucide-react";
+import { MailIcon, Phone, Globe } from "lucide-react";
 
 const page = () => {
   return (
@@ -62,8 +62,8 @@ const page = () => {
 
               {/* Phone */}
               <div className="bg-black/30 rounded-2xl p-6 border border-gray-800 hover:border-gray-600 transition">
-                <h3 className="text-2xl font-bold mb-2">
-                  📞 Telephone
+                <h3 className="text-2xl font-bold mb-2 flex ">
+                  <Phone /> Telephone
                 </h3>
 
                 <p className="text-gray-400 text-lg">
@@ -73,8 +73,8 @@ const page = () => {
 
               {/* Email */}
               <div className="bg-black/30 rounded-2xl p-6 border border-gray-800 hover:border-gray-600 transition">
-                <h3 className="text-2xl font-bold mb-2">
-                  ✉️ Email Address
+                <h3 className="text-2xl font-bold mb-2 flex">
+                  <MailIcon /> Email Address
                 </h3>
 
                 <p className="text-gray-400 text-lg">
