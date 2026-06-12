@@ -7,7 +7,7 @@ import menu from '../public/menu.png'
 import Image from 'next/image';
 
 const task = [{ title: 'About us', path: '/about' },
-{ title: 'Languages', path: 'languages' },
+{ title: 'Languages', path: '/languages' },
 { title: 'Contact', path: '/contact' },
 { title: 'Login', path: '/login' }];
 const Navbar = () => {
